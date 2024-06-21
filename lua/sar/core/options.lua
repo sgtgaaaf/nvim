@@ -1,10 +1,9 @@
 local opt = vim.opt
-
 opt.number = true
 opt.relativenumber = true
-
-
-opt.tabstop = 3
 opt.shiftwidth = 3
-opt.expandtab = true
+opt.tabstop = 3
 opt.autoindent = true
+opt.expandtab = true
+
+vim.cmd(":set colorcolumn=72")

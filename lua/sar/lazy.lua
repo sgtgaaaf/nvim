@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	{ import = "sar.plugins" },
-	--, { import = "sar.plugins.lsp" }
+	{ import = "sar.plugins.experimental" },
 }, {
 	checker = {
 		enabled = true,

@@ -1,10 +1,11 @@
--- template : vim.keymap.set("mode", "new key", "desired-function", { desc = " for the whichkey "})
--- template-blank : vim.keymap.set("n", "", "<>", { desc = "  "})
---
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 local map = vim.keymap
 
+map.set('i','jk','<ESC>')
+map.set('n', '<leader>ee', vim.cmd.Ex )
+map.set('n', '<leader>bx', vim.cmd.q )
+map.set('n', 'lz', vim.cmd.q )
+map.set('n', '<C-s>', vim.cmd.w )
+map.set('v','J',":m '>+1<CR>gv=gv")
+map.set('v','K',":m '<-2<CR>gv=gv")
 
--- custom keymaps
---
-map.set("i","jk","<esc>",{ desc = "Exit insert mode with jk" })
