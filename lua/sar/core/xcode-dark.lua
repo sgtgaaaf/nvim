@@ -21,7 +21,7 @@ local theme = {
 	Color1 = "#FC6A5D", --string
 	Color2 = "#FC5FA3", --keyword
 	Color3 = "#D0A8FF", --annotation
-	Color4 = "#67B7A4",
+	Color4 = "#67B7A4", --Identifier
 	Color5 = "#FFFFFF",
 	Color6 = "#5482FF",
 	Color7 = "#41A1C0",
@@ -30,11 +30,14 @@ local theme = {
 	Color10 = "#6C7986",
 	Color11 = "#92A1B1",
 
-	red = "#e95678",
+	red = "#FF0000",
 	redwine = "#d16d9e",
 	orange = "#FF8700",
 	structureblue = "#55bee0",
+	classblue = "#5DD8FF",
 	yellow = "#f7bb3b",
+	yellownumber = "#D0BF69",
+	purple = "#A167E6",
 	green = "#afd700",
 	-- #a8eb44
 	dark_green = "#98be65",
@@ -126,7 +129,7 @@ local syntax = {
 	debugBreakpoint = { fg = theme.bg, bg = theme.red },
 
 	Boolean = { fg = theme.Color2 },
-	Number = { fg = theme.yellow },
+	Number = { fg = theme.yellownumber },
 	Float = { fg = theme.yellow },
 	PreProc = { fg = theme.violet },
 	PreCondit = { fg = theme.violet },
@@ -147,7 +150,7 @@ local syntax = {
 	Title = { fg = theme.orange, bold = true },
 	Special = { fg = theme.Color4 },
 	SpecialChar = { fg = theme.Color4 },
-	Type = { fg = theme.Color2 },
+	Type = { fg = theme.classblue, bold = true },
 	Function = { fg = theme.Color4 },
 	String = { fg = theme.Color1 },
 	Character = { fg = theme.Color2, bold = true },
@@ -177,8 +180,8 @@ local plugin_syntax = {
 	["@function.method"] = { fg = theme.Color7 },
 	["@function.method.call"] = { fg = theme.Color4 },
 	["@keyword"] = { fg = theme.Color2, bold = true },
-	["@property"] = { fg = theme.yellow },
-	["@type"] = { fg = theme.Color2 },
+	["@property"] = { fg = theme.purple },
+	["@type"] = { fg = theme.classblue },
 	["@type.builtin"] = { fg = theme.Color9 },
 	["@variable"] = { fg = theme.Color5 },
 	["@punctuation.bracket"] = { fg = theme.Color5 },

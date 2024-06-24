@@ -8,4 +8,4 @@ opt.shiftwidth = 3
 opt.expandtab = true
 opt.autoindent = true
 
-vim.cmd.set("colorcolumn=80")
+vim.cmd.set("colorcolumn=120")
